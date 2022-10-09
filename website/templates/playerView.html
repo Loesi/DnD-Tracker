@@ -1,4 +1,33 @@
 {% extends "base.html"%} {% block title %}Player View{% endblock %} {% block
 content %}
-<h1>Player View</h1>
+<h1 class="header">Player View</h1>
+<div class="container-player">
+  <div class="container-fluid">
+    <img src="static/Icons/Fighter.png" alt="Player Icon" class="player-icon" />
+    <h2 class="player-name">PlayerName</h2>
+  </div>
+  <div class="container text-center">
+    <div class="row row-cols-3">
+      <div class="col">
+        <h3 class="statItem">Str</h3>
+      </div>
+      <div class="col">
+        <h3 class="statItem">Dex</h3>
+      </div>
+      <div class="col">
+        <h3 class="statItem">Con</h3>
+      </div>
+      <div class="col">
+        <h3 class="statItem">Int</h3>
+      </div>
+      <div class="col">
+        <h3 class="statItem">Wis</h3>
+      </div>
+      <div class="col">
+        <h3 class="statItem">Cha</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
