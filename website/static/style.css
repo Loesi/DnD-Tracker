@@ -20,6 +20,12 @@ body {
     font-size: 12px;
 }
 
+.statValue {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
 .container-player {
     border-radius: 20px;
     background-color: #4e4e4e;
