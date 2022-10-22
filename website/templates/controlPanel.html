@@ -1,4 +1,22 @@
 {% extends "base.html"%} {% block title %}Control Panel{% endblock %} {% block
 content %}
-<h1>Control Panel</h1>
+<div class="screen">
+    <h1 class="header">Control Panel</h1>
+    <div class="encounterView">
+        <div class="playerList">
+            
+        </div>
+        <div class="buttons-box">
+                <a type="button" class="btn btn-primary btn-encounter" href="/editEnc">Edit Encounter</a>
+            {% if enities != [] %}
+                <a type="button" class="btn btn-primary btn-encounter" href="/giveIni">Give Initiative</a>
+            {% endif %} {% if iniGiven == True %}
+                <a type="button" class="btn btn-primary btn-encounter" href="/runEnc">Run Encounter</a>
+            {% endif %}
+        </div>
+        <div class="List-all-encounters">
+
+        </div>
+    </div>
+</div>
 {% endblock %}

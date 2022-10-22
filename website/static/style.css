@@ -2,6 +2,45 @@ body {
     background-color:  #1e1e1e;
 }
 
+.screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-self: center;
+}
+
+.encounterView {
+    display: flex;
+    height: 100%;
+}
+
+.playerList {
+    flex: 1;
+}
+
+.buttons-box {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.List-all-encounters {
+    flex: 1;
+}
+
+.encounter-buttons {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn-encounter {
+    width: 150px;
+    margin: 10px;
+}
+
 .header {
     color: rgb(226, 226, 226);
     text-align: center;
@@ -20,19 +59,40 @@ body {
     font-size: 12px;
 }
 
-.container-player {
+.container-player-stats {
     border-radius: 20px;
     background-color: #4e4e4e;
     width: 160px;
     padding: 10px;
+    margin: 10px;
     }
+
+.container-player-min {
+    border-radius: 20px;
+    background-color: #4e4e4e;
+    width: 160px;
+    padding: 10px;
+    margin: 10px;
+}
 
 .player-icon {
     display: block;
     width: 60px;
+    height: 60px;
+    object-fit: cover;
+
     border-radius:50%;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #dddddd
 }
 
+.map {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.screen {
+    width: 100%;
+}

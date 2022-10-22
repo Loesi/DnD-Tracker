@@ -15,7 +15,7 @@ def create_app():
     app.register_blueprint(views, url_prefix="/")
 
     #Alle Klassen importieren
-    from .models import Encounter
+    from .models import Encounter, Entity
 
     create_database(app)
 
